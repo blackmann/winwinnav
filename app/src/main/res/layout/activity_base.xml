@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- This view contains sub-class' content views -->
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- This view will be used for the bottom sheet -->
+        <!-- don't forget to add the layout_behaviour -->
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            app:headerLayout="@layout/view_drawer_header"
+            app:itemIconTint="#8b8b8b"
+            app:itemTextColor="#666666"
+            app:layout_behavior="android.support.design.widget.BottomSheetBehavior" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
